@@ -1,0 +1,38 @@
+/**
+ * PREVAYL TEMPLATE — Design Tokens
+ * EDIT THESE to rebrand the entire site.
+ */
+:root {
+  --brand-gold:        #C9A84C;
+  --brand-gold-dark:   #A67C32;
+  --brand-gold-light:  #E8D48B;
+  --brand-gold-glow:   rgba(201, 168, 76, 0.25);
+  --bg-page:           #0a0f1a;
+  --bg-elevated:       #0d121e;
+  --bg-card:           #111827;
+  --bg-border:         #1e2d40;
+  --bg-slate:          #3D5470;
+  --text-primary:      #ffffff;
+  --text-body:         #c8d8e8;
+  --text-muted:        #9a9894;
+  --text-gold:         var(--brand-gold);
+  --status-success:    #10b981;
+  --status-info:       #60a5fa;
+  --status-warning:    #f59e0b;
+  --glass-bg:          rgba(17, 24, 39, 0.55);
+  --glass-bg-strong:   rgba(13, 18, 30, 0.75);
+  --glass-border:      rgba(201, 168, 76, 0.12);
+  --glass-border-strong: rgba(201, 168, 76, 0.18);
+  --font-sans:         'Inter', system-ui, sans-serif;
+  --font-display:      'Bebas Neue', Impact, sans-serif;
+  --font-mono:         'JetBrains Mono', monospace;
+  --max-width:         80rem;
+  --header-height:     64px;
+  --radius-sm:         0.5rem;
+  --radius-md:         0.75rem;
+  --radius-lg:         1rem;
+  --radius-xl:         1.25rem;
+  --radius-2xl:        1.5rem;
+  --section-py:        5rem;
+  --container-px:      1.5rem;
+}

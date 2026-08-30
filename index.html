@@ -5,270 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The AI-native OS for auto transport · Prevayl</title>
   <meta name="description" content="TMS, CRM, accounting, dispatch, AI — one platform. Free for carriers. Per-VIN economics for brokers." />
+  <!--
+    PREVAYL WEBSITE TEMPLATE
+    Edit content → js/content.js
+    Edit colors  → css/theme.css
+    Edit layout  → css/site.css
+    See TEMPLATE.md for the full edit guide
+  -->
   <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="inner">
-      <a href="index.html" class="logo">
-        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <circle cx="20" cy="12" r="5" fill="#C9A84C"/>
-          <path d="M20 17 L20 28" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round"/>
-          <path d="M12 22 Q16 26 20 28 Q24 26 28 22" stroke="#C9A84C" stroke-width="1.5" fill="none" opacity="0.7"/>
-        </svg>
-        PREVAYL
-      </a>
-      <nav class="nav-desktop" aria-label="Main">
-        <div class="nav-item">
-          <a href="pages/platform.html">Platform</a>
-          <div class="dropdown"><div class="dropdown-inner">
-            <div class="dd-label">Modules</div>
-            <a href="pages/dispatch.html">Dispatch</a>
-            <a href="pages/agents.html">Meet the Agents</a>
-            <a href="pages/accounting.html">Accounting</a>
-            <a href="pages/platform.html">Overview</a>
-          </div></div>
-        </div>
-        <div class="nav-item">
-          <a href="pages/solutions.html">Solutions</a>
-          <div class="dropdown"><div class="dropdown-inner">
-            <div class="dd-label">By role</div>
-            <a href="pages/brokers.html">Brokers</a>
-            <a href="pages/carriers.html">Carriers</a>
-            <a href="pages/dealers.html">Dealers</a>
-            <a href="pages/wholesale.html">Auctions</a>
-          </div></div>
-        </div>
-        <a href="pages/pricing.html">Pricing</a>
-        <a href="pages/contact.html">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <a href="pages/contact.html" class="btn btn-gold btn-sm">Get Started</a>
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
-    <a href="pages/platform.html">Platform</a>
-    <a href="pages/agents.html" class="sub">— Meet the Agents</a>
-    <a href="pages/solutions.html">Solutions</a>
-    <a href="pages/brokers.html" class="sub">— Brokers</a>
-    <a href="pages/carriers.html" class="sub">— Carriers</a>
-    <a href="pages/pricing.html">Pricing</a>
-    <a href="pages/contact.html">Contact</a>
-  </nav>
-
+  <header class="site-header" id="site-header"></header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"></nav>
   <main>
-    <section class="hero">
-      <div class="hero-glow" style="width:500px;height:500px;background:rgba(201,168,76,0.1);top:0;left:25%;transform:translateX(-50%)"></div>
-      <div class="hero-grid"></div>
-      <div class="container hero-grid-layout">
-        <div>
-          <p class="eyebrow">Auto Transport · TMS · CRM · OS</p>
-          <h1 class="font-display">
-            THE AI-NATIVE<br />
-            <span class="text-gold-gradient">OPERATING SYSTEM</span><br />
-            FOR AUTO TRANSPORT
-          </h1>
-          <p class="hero-sub">
-            TMS, CRM, accounting, dispatch, AI — one platform. One subscription.
-            <strong style="color:var(--prevayl-gold)">Free for carriers.</strong>
-            Predictable per-VIN economics for brokers.
-          </p>
-          <div class="hero-ctas">
-            <a href="pages/contact.html" class="btn btn-gold btn-md">Get Started Free →</a>
-            <a href="pages/platform.html" class="btn btn-ghost btn-md">Tour the Platform</a>
-          </div>
-          <p class="hero-note">Pricing built to your volume · No card required</p>
-        </div>
-
-        <div class="preview-card glass">
-          <div class="preview-inner">
-            <div class="preview-bar">
-              <span style="color:var(--prevayl-gold);font-weight:600;letter-spacing:0.05em">PREVAYL</span>
-              <span style="color:var(--prevayl-slate)">|</span>
-              <span>Dispatch</span>
-              <span style="margin-left:auto;display:flex;align-items:center;gap:6px">
-                <span style="width:8px;height:8px;border-radius:50%;background:var(--prevayl-success)"></span>
-                <span style="color:var(--prevayl-success)">Live</span>
-              </span>
-            </div>
-            <div class="preview-map">
-              <svg viewBox="0 0 400 250" fill="none" aria-hidden="true">
-                <path d="M40 120 Q100 80 160 100 T280 90 T360 110" stroke="#C9A84C" stroke-width="1.5" opacity="0.6" stroke-dasharray="4 4"/>
-                <path d="M60 160 Q140 140 200 150 T340 140" stroke="#C9A84C" stroke-width="1.5" opacity="0.4"/>
-                <circle cx="80" cy="130" r="4" fill="#C9A84C"/>
-                <circle cx="300" cy="95" r="4" fill="#C9A84C"/>
-                <circle cx="340" cy="145" r="4" fill="#10b981"/>
-                <text x="70" y="150" fill="#9a9894" font-size="8">Detroit</text>
-                <text x="290" y="85" fill="#9a9894" font-size="8">Atlanta</text>
-                <text x="320" y="165" fill="#9a9894" font-size="8">Miami</text>
-              </svg>
-              <div class="preview-pill" style="top:12px;left:12px">
-                <span style="color:var(--prevayl-gold);font-family:var(--font-mono)">47</span> active loads
-              </div>
-              <div class="preview-pill" style="bottom:12px;right:12px">
-                AI Match <span style="color:var(--prevayl-success);font-family:var(--font-mono)">94%</span>
-              </div>
-            </div>
-            <div class="preview-loads">
-              <div><span>Detroit, MI → Atlanta, GA</span><span class="status-gold">IN TRANSIT</span></div>
-              <div><span>Chicago, IL → Miami, FL</span><span class="status-blue">DISPATCHED</span></div>
-              <div><span>Phoenix, AZ → Dallas, TX</span><span class="status-green">DELIVERED</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title font-display" style="color:var(--prevayl-gold)">AUTO TRANSPORT ACTUALLY WORKS.</h2>
-        <p class="section-lead">Dispatch, orders, customers, accounting, and operations live in one place. No more duct-taping a load board with QuickBooks and seventeen spreadsheets.</p>
-        <div class="cards-3">
-          <div class="card glass module-card">
-            <h3>One living platform</h3>
-            <p>17 workflows, 15 specialized bots. Auto-pricing, auto-matching, auto-vetting, auto-invoicing. Activates at 200 orders/month.</p>
-          </div>
-          <div class="card glass module-card">
-            <h3>Always free for carriers</h3>
-            <p>Owner-operators and small fleets pay nothing. Driver app, BOL, IFTA, payouts — all free.</p>
-          </div>
-          <div class="card glass module-card">
-            <h3>Per-VIN, not per-load</h3>
-            <p>$1 per VIN. No per-load fees, no per-mile cuts. Predictable economics that scale with you.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <div class="text-center" style="max-width:36rem;margin:0 auto 3rem">
-          <h2 class="section-title font-display">BUILT FOR EVERYONE <span class="gold">IN THE LANE.</span></h2>
-        </div>
-        <div class="cards-4">
-          <a href="pages/brokers.html" class="card glass module-card">
-            <div class="num">01</div><h3>Brokers</h3>
-            <p>AI carrier matching, per-VIN pricing, full TMS + accounting.</p>
-            <span class="link">Explore →</span>
-          </a>
-          <a href="pages/carriers.html" class="card glass module-card">
-            <div class="num">02</div><h3>Carriers</h3>
-            <p>Always free. Driver app, BOL, IFTA, Stripe payouts. $0/mo forever.</p>
-            <span class="link">Explore →</span>
-          </a>
-          <a href="pages/dealers.html" class="card glass module-card">
-            <div class="num">03</div><h3>Dealers</h3>
-            <p>White-label portal. Real-time VIN tracking. Stop the phone tag.</p>
-            <span class="link">Explore →</span>
-          </a>
-          <a href="pages/wholesale.html" class="card glass module-card">
-            <div class="num">04</div><h3>Auctions</h3>
-            <p>Manheim · ADESA · OVE. Auction lot to buyer in one workflow.</p>
-            <span class="link">Explore →</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <div class="text-center mb-8">
-          <h2 class="section-title font-display">SIMPLE. PER-VIN. <span class="gold">PREDICTABLE.</span></h2>
-        </div>
-        <div class="pricing-grid">
-          <div class="price-card glass">
-            <h3>Solo</h3>
-            <p class="range">5–25 cars/month</p>
-            <ul>
-              <li>Free for carriers</li>
-              <li>Dispatch + load board</li>
-              <li>eBOL + inspection photos</li>
-              <li>Basic invoicing + AR</li>
-            </ul>
-            <a href="pages/contact.html" class="btn btn-ghost btn-sm" style="width:100%">Start Free Trial</a>
-          </div>
-          <div class="price-card glass featured">
-            <div class="badge">MOST POPULAR</div>
-            <h3>Pro</h3>
-            <p class="range">25–200 cars/month</p>
-            <ul>
-              <li>Everything in Solo</li>
-              <li>AI Control Center (17 workflows)</li>
-              <li>Full accounting (replaces QuickBooks)</li>
-              <li>DamageDesk + Stripe Connect</li>
-              <li>QBO / Xero 2-way sync</li>
-            </ul>
-            <a href="pages/contact.html" class="btn btn-gold btn-sm" style="width:100%">Start Free Trial</a>
-          </div>
-          <div class="price-card glass">
-            <h3>Growth</h3>
-            <p class="range">200–1,000 cars/month</p>
-            <ul>
-              <li>Everything in Pro</li>
-              <li>Dedicated onboarding</li>
-              <li>Custom-branded dispatcher UI</li>
-              <li>Advanced analytics + BI</li>
-              <li>SSO + priority support</li>
-            </ul>
-            <a href="pages/contact.html" class="btn btn-ghost btn-sm" style="width:100%">Start Free Trial</a>
-          </div>
-        </div>
-        <p class="text-center mt-8" style="color:var(--prevayl-muted);font-size:0.875rem">
-          <a href="pages/pricing.html" style="color:var(--prevayl-gold)">Full feature comparison →</a>
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container text-center" style="max-width:40rem">
-        <h2 class="section-title font-display">READY TO MOVE?</h2>
-        <p class="section-lead" style="margin:0 auto 2rem">Get started in under 10 minutes. Pricing is built around your volume.</p>
-        <div class="flex-center">
-          <a href="pages/contact.html" class="btn btn-gold btn-lg">Start Free Trial</a>
-          <a href="pages/contact.html" class="btn btn-ghost btn-lg">Book a 30-min Demo</a>
-        </div>
-      </div>
-    </section>
+    <section class="hero" id="hero-root"></section>
+    <section class="section" id="features-root"></section>
+    <section class="section section-alt" id="roles-root"></section>
+    <section class="section" id="modules-root"></section>
+    <section class="section section-alt" id="pricing-root"></section>
+    <section class="section" id="final-cta-root" style="position:relative;overflow:hidden"></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">PREVAYL</a>
-          <p>The AI-native operating system for auto transport. TMS, CRM, accounting, and dispatch — one platform.</p>
-        </div>
-        <div class="footer-cols">
-          <div>
-            <h5>Platform</h5>
-            <a href="pages/dispatch.html">Dispatch</a>
-            <a href="pages/agents.html">AI Agents</a>
-            <a href="pages/accounting.html">Accounting</a>
-          </div>
-          <div>
-            <h5>Solutions</h5>
-            <a href="pages/brokers.html">Brokers</a>
-            <a href="pages/carriers.html">Carriers</a>
-            <a href="pages/dealers.html">Dealers</a>
-          </div>
-          <div>
-            <h5>Company</h5>
-            <a href="pages/pricing.html">Pricing</a>
-            <a href="pages/contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Prevayl Inc. · MC#01813480 · DOT#4562182 · Howell, MI</span>
-        <span>Built for the lane.</span>
-      </div>
-    </div>
-  </footer>
-  <script src="js/site.js"></script>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/content.js"></script>
+  <script src="js/render.js"></script>
 </body>
 </html>
