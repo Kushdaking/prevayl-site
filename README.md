@@ -1,34 +1,46 @@
-# Prevayl Functional Website (Static)
+# Prevayl Site
 
-A complete, working multi-page website using the locked redesign theme.
+Functional multi-page marketing site for **Prevayl** — the AI-native OS for auto transport.
 
-## Run it
+**Repo:** https://github.com/Kushdaking/prevayl-site
+
+## Live it locally
 
 ```bash
-# From this folder
+git clone https://github.com/Kushdaking/prevayl-site.git
+cd prevayl-site
 npx serve .
-# or
-python3 -m http.server 8080
-# then open http://localhost:8080
+# open http://localhost:3000
 ```
+
+## Deploy to Cloudflare Pages (your stack)
+
+1. Cloudflare Dashboard → **Pages** → Create project
+2. Connect this GitHub repo
+3. Build command: *(leave empty)*
+4. Output directory: `/`
+5. Deploy
 
 Or enable **GitHub Pages**: Settings → Pages → Deploy from branch `main` / root.
 
 ## Pages
 
-| Path | Status |
-|------|--------|
-| `index.html` | Full homepage |
-| `pages/agents.html` | Meet the Agents |
-| `pages/pricing.html` | Full pricing |
-| `pages/brokers.html` | Solutions → Brokers |
-| `pages/carriers.html` | Solutions → Carriers |
-| `pages/contact.html` | Contact form |
-| Other pages under `pages/` | Stubs ready to expand |
+| Path | Description |
+|------|-------------|
+| `/` | Homepage |
+| `/pages/agents.html` | Meet the Agents |
+| `/pages/pricing.html` | Pricing |
+| `/pages/brokers.html` | Solutions → Brokers |
+| `/pages/carriers.html` | Solutions → Carriers |
+| `/pages/dealers.html` | Solutions → Dealers |
+| `/pages/wholesale.html` | Auctions |
+| `/pages/dispatch.html` | Dispatch |
+| `/pages/accounting.html` | Accounting |
+| `/pages/contact.html` | Contact form |
 
 ## Theme
 
-- Gold: `#C9A84C`
-- Navy: `#0a0f1a`
-- Glassmorphism + Bebas Neue / Inter / JetBrains Mono
-- Working nav dropdowns + mobile menu
+- Gold `#C9A84C` · Navy `#0a0f1a` · Glassmorphism
+- Fonts: Bebas Neue, Inter, JetBrains Mono
+
+© 2026 Prevayl Inc. · MC#01813480 · DOT#4562182 · Howell, MI
